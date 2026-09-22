@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кликер</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Кликер</h1>
+    <p>Кликов: <span id="clickCount">0</span></p>
+    <button id="clickButton">Клик!</button>
+
+    <h2>Магазин улучшений</h2>
+    <div id="shop">
+      <button class="upgrade" data-cost="10" data-multiplier="2">Улучшение x2 (10 кликов)</button>
+      <button class="upgrade" data-cost="200" data-multiplier="3">Улучшение x3 (200 кликов)</button>
+      <button class="upgrade" data-cost="500" data-multiplier="5">Улучшение x5 (500 кликов)</button>
+      <button class="upgrade" data-cost="1000" data-multiplier="10">Улучшение x10 (1000 кликов)</button>
+      <button class="upgrade" data-cost="5000" data-multiplier="20">Улучшение x20 (5000 кликов)</button>
+      <button class="upgrade" data-cost="100000" data-multiplier="50">Улучшение x50 (100,000 кликов)</button>
+      <button class="upgrade" data-cost="1000000" data-multiplier="100">Улучшение x100 (1,000,000 кликов)</button>
+      <button class="upgrade" data-cost="10000000" data-multiplier="1000">Улучшение x1000 (10,000,000 кликов)</button>
+    </div>
+
+    <h2>Приколы</h2>
+    <button id="randomEvent">Случайное событие</button>
+  </div>
+
+  <audio id="clickSound" src="click.mp3"></audio>
+  <audio id="eventSound" src="event.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
